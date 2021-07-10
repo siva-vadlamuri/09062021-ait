@@ -1,0 +1,17 @@
+HTML --> Structure of the Page 
+CSS -> Style you web pages 
+JavaScript --> To make your web pages interactive and dynamic 
+
+Static Web Pages Vs Dynamic Web Page 
+
+JavaScript is a Scripting Language, it is a single threaded language, loosely coupled
+
+Programming Language, Scripting Langaugages 
+
+--> Java, C, C++  will use compilers 
+--> Java Script, Python, PHP they will use interpreter 
+--> Interpreters  will execute line by line 
+
+--> Single Threaded Language,
+--> In Single Threaded they will execute only one line of code at time 
+
