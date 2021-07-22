@@ -154,3 +154,6 @@ do {
 
 // do while is also called as exit controled loop
 // for and while are entry control loop
+
+// Array Method (inbuilt methods )
+// String Method 

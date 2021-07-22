@@ -1,0 +1,39 @@
+:root {
+  --yellow: #ffbb30;
+  --white: #fff;
+  --grey: grey;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--white);
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-flex div {
+  background-color: #fff;
+  margin: 20px;
+  box-shadow: 0px 5px 10px rbga(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  min-width: 150px;
+}
+
+.d-flex div:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/* .article-head div p {
+  color: #0000ff;
+} */
+
+.bg-yellow {
+  background-color: yellow;
+}
