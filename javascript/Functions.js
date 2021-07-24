@@ -1,134 +1,66 @@
-//What is Function
-// why we use functions
-// what are the different types of functions
+// Call back Function
+// call back is a function that is passed as an argument to another function
 
-// Function a pice of code or block of code which will perform a specfic task, we can also reuse the code
-
-// Array
-// pop
-// push
-// shift
-// unshift
-
-// login, register, logout, addToCart
-
-//
-
-// To write your own login for a specfic task
-
-// We need to write the custom code
-
-// How to write a function
-
-// you cannot use reserver keyword
-
-if (true) {
-  console.log("it is true");
+function x(callback) {
+  // console.log(callback);
+  callback();
 }
 
-// function declartion
-function welcomeMessage() {
-  document.write("<h1>Welcome To AIT </h1>");
-  // console.log("welcome user");
+function y() {
+  console.log("It is a callback function");
+}
+x(y);
+
+// we will take a userinput
+
+function greeting(name) {
+  alert("hello" + name);
 }
 
-welcomeMessage();
-
-var userId = 123;
-var password = "ait@123";
-
-function loginUser() {
-  if (userId == "123" && typeof userId == "number" && password == "ait@123") {
-    // alert("Welcome to AIT");
-  } else {
-    alert("Invalid creditials");
+function processUserInput(callbackFunc) {
+  console.log(callbackFunc);
+  // var user = prompt("Enter your name");
+  if (user) {
+    callbackFunc(user);
   }
 }
+// map
+// reduce
+// filter
 
-loginUser();
+// processUserInput(greeting);
+// greeting is a callback function
+// processUserInput is taking another function as an argument, higher order function
 
-// calling // invoking // running
+// High order function
+// A function that takes another function as an argument
 
-// function with paramerts
+// nested function
 
-// Parameters when you declared a function
-// Function Declaration // Function Statement
-function calcSum(a, b) {
-  var total = a + b;
-  console.log(total);
+// function inside of another function is called nested function
+
+function outer() {
+  function inner() {
+    console.log("inner func");
+  }
+  inner();
 }
-calcSum(10, 20);
+outer();
 
-// Arguments when you invoking the function if passing any data to function these are called
-// arguments
-// what is difference between function declaration and function expression
-// function without paramerts
-// function with paramerts
-// function with return statement
-// function with default paramerts
-// anaomous function
-// self invoking function
-// call back function
-// higher order function
-//recursive functions
-// Arrow function
-// NaN
+// curryfunction, recurisve function
 
-// function with return statement
-function mulitplyTheNumbers(param1, param2) {
-  var result = param1 * param2;
-  return result;
-}
-var output = mulitplyTheNumbers(10, 20);
-console.log(output);
+// Introduction to events
 
-// Function with default Parameters
-function calculateGst(ammount, gst) {
-  var totalAmmount = ammount + (ammount * gst) / 100;
-  console.log(totalAmmount);
-}
-// calculateGst(100000);
-// calculateGst(10000, 20);
+// Event : Triggering an Action
+// page events
+// forms events
+// mouse events
+// keyboard events
 
-// Anonomous Function
-// Function without a name  anonomous function
+var button = document.getElementById("button");
+console.log(button);
 
-// function (){
-// }
-
-// self invoking function
-
-// (function () {
-//   console.log("Self invoking function");
-// })();
-
-// Function Expression
-// When your assiging funtion as a value to the variable is called function expression
-var firstName = function (a, b) {
-  console.log(a, b);
-  console.log("I am a function expression");
+button.onclick = function (event) {
+  alert("Button was clicked");
+  console.log(event.target);
 };
-// console.log(firstName);
-
-// firstName(10, 20);
-
-// Arrow Function
-// es6, shorthand (consice) way of writing function expression
-
-// var myFunc = () => {
-//   console.log("I am a arrow function");
-// };
-// myFunc();
-
-// mulitplyBy2
-
-var mulitplyBy2 = (num1) => console.log(num1 * 2);
-mulitplyBy2(23);
-
-function sumOfTheNumbers(param1, param2) {
-  console.log(param1, param2);
-  // when you doing mathemtical operator with undefined  return NaN
-  // isNaN()
-  console.log(param1 + param2);
-}
-sumOfTheNumbers();

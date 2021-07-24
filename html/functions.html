@@ -9,9 +9,29 @@
       h1 {
         color: gold;
       }
+      body {
+        height: 500vh;
+      }
+      .button-class {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        background-color: hsl(200, 80%, 50%);
+        outline: none;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
+    <div class="button-class">
+      <button class="btn" id="button">Click Me</button>
+    </div>
     <script src="../javascript/Functions.js"></script>
   </body>
 </html>
