@@ -39,10 +39,6 @@ function closeModal() {
   backdrop.remove();
 }
 
-var myFunc = function(){
+var myFunc = function () {};
 
-}
-for(let i=0;i>10;i++){
-    
-}
-myFunc()
+myFunc();
