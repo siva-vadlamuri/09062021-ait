@@ -101,6 +101,12 @@ body {
   transform: translateX(-100%);
 }
 
+/* Form Validation CSS Goes Here */
+
+/* #userErr,#passwordErr,#emailErr{
+  color : red
+} */
+
 .overlay {
   background-color: var(--lightblue);
   background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
@@ -197,7 +203,7 @@ body {
   background-color: #fff;
   border: none;
   padding: 0.9rem 0.9rem;
-  margin: 0.5rem 0;
+  margin: 0;
   width: 100%;
 }
 

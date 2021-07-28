@@ -60,7 +60,19 @@ outer();
 var button = document.getElementById("button");
 console.log(button);
 
-button.onclick = function (event) {
+button.addEventListener("click", function () {
   alert("Button was clicked");
-  console.log(event.target);
-};
+});
+
+// button.onclick = function (event) {
+//   alert("Button was clicked");
+//   console.log(event.target);
+// };
+
+// button.addEventListner("click", function () {
+//   alert("Button was clicked");
+// });
+
+// function handleClickEvent(){
+//   alert('Button was clicked')
+// }
