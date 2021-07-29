@@ -100,3 +100,10 @@ let obj = {
 };
 
 console.log(obj?.address?.street);
+
+// AGEND :
+// Hoisting
+// setTimeOut
+// setInterval
+// Math
+// Date
