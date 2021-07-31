@@ -12,6 +12,32 @@ Programming Language, Scripting Langaugages
 --> Java Script, Python, PHP they will use interpreter 
 --> Interpreters  will execute line by line 
 
---> Single Threaded Language,
---> In Single Threaded they will execute only one line of code at time 
+
+AJAX --> Asycncronous JavaScript And XML/JSON
+Asycncronous
+
+JavaScript is Scyncronous Single Threaded language 
+It will execute only one line at a time and it can go to next line 
+only after the present line is executed.
+
+Blocking Code 
+
+Asycncronous Code  can execute multiple lines of code at time in background
+
+HTTP methods
+GET --> for reterving the data from the server 
+POST --> Send the Data to the server  
+PUT --> Updating existing data 
+Delete --> Deleting the data
+
+States
+
+Status Code  
+200+ Successfull 
+300+  Redirection 
+400+ Client side issue (Bad Request) 
+File is not found in the server (404)
+Resource Not found 
+500+ Internal server issue 
+
 
