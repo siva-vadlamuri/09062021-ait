@@ -40,4 +40,11 @@ File is not found in the server (404)
 Resource Not found 
 500+ Internal server issue 
 
+Implemation we will use xmlHttpRequest 
 
+Promise (Es6 )
+Real World Promsies
+
+you loose 5 kgs till next month
+if your loosing 5kg after one month the promise was fulfilled
+if not loosing your weight your promise was rejected

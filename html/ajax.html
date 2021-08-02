@@ -98,5 +98,53 @@
     </header>
 
     <section id="result"></section>
+
+    <script>
+      // xmlHttpRequest
+      const home = document.getElementById("home");
+      const about = document.getElementById("about");
+      home.addEventListener("click", getDataFromTheServer);
+      about.addEventListener("click", () => {
+        // debugger;
+        const xhr = new XMLHttpRequest();
+        // HTTP Method , URL/File, Boolean / Async / Sync
+        xhr.open("GET", "about.html", true);
+
+        xhr.onprogress = function () {
+          console.log(xhr.readyState);
+        };
+        xhr.onerror = function () {
+          console.log("error occured");
+        };
+        xhr.onload = function () {
+          if (xhr.status == 200 && xhr.readyState == 4) {
+            // debugger;
+            const result = document.getElementById("result");
+            result.innerHTML = xhr.responseText;
+          }
+        };
+        xhr.send();
+      });
+
+      function getDataFromTheServer() {
+        const xhr = new XMLHttpRequest();
+        console.log(xhr);
+        // 0 1 2 3 4
+        console.log(xhr.readyState);
+        // '1 HTTP Method (GET,POST,PUT,DELETE') 2 server url, flie, booleen true
+        xhr.open("GET", "http://jsonplaceholder.typicode.com/users", true);
+        console.log(xhr.readyState);
+        xhr.onload = function () {
+          if (xhr.status === 200 && xhr.readyState === 4) {
+            // console.log();
+            const result = document.getElementById("result");
+            result.innerHTML = xhr.responseText;
+            console.log(xhr.responseText);
+          }
+        };
+        xhr.send();
+      }
+    </script>
+    <script src="../javascript/promises.js"></script>
   </body>
 </html>
